@@ -1,0 +1,25 @@
+package execultaveis;
+
+import java.util.Scanner;
+
+public class Atividade_7 {
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Informe o valor de A: ");
+		int a = scanner.nextInt();
+		System.out.println("Informe o valor de B:");
+		int b = scanner.nextInt();
+		
+		System.out.println("Valor de A: "+ a +
+							"\nValor de B: " + b);
+		
+		if(a > b) {
+			System.out.println("Maior: " + a);
+		}else {
+			System.out.println("Maior: " + b);
+		}
+		
+	}
+}
