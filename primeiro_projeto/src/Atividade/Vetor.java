@@ -2,32 +2,41 @@ package Atividade;
 import java.util.Scanner;
 
 public class Objeto{
-	
-	Scanner scanner = new Scanner(System.in);
 
 	//Atributos
-	private int pares, soma;
-	private int maior, menor;
-	private double media;
+	private int tamVetor;
+	int[] vet = new int[tamVetor];
 	
 	//construtor
-	public Objeto() {
-		super();
-		this.pares = 0;
-		this.soma = 0;
+	Vetor(int tamVetor) {
+		this.tamVetor = tamVetor;
+		preencherVetor();
 	}
 	
+	//gets e sets
+	
+	public int getTamVetor() {
+	
+	public void setTamVetor(int tamVetor) {
+	
+	public int[] getVet() {() {
+			
+	public void setVet(int[] vet) {
+	
+	
 	//metotos
-	public void play(int qntNumeros) {
+	public void preencherVetor() {
 		
-		int[] vetor = new int[qntNumeros];
+		Scanner scanner = new Scanner(System.in);
 		
-	for(int i = 0; i < vetor.length; i++) {
+	for(int i = 0; i < vet.length; i++) {
 		System.out.println("Informe um número inteiro: ");
-		vetor[i] = scanner.nextInt();
-		if(vetor[i] % 2 == 0) pares++;
-		soma += vetor[i];
+		vet[i] = scanner.nextInt();
 	}
+	}
+	
+	if(vetor[i] % 2 == 0) pares++;
+	soma += vet[i];
 	
 	maior = vetor[0];
 	menor = maior;
@@ -59,5 +68,30 @@ public class Objeto{
 		if(vetor[i] > media)System.out.println("vet[" + i + "]: " + vetor[i]);
 	}
 	
+	public int maior() {
+		int maior
 	}
+
+	public int menor() {
+		int menor
+	}
+	public int somaElementos() {
+		int soma; 
+		
+		for(int i = 0; i < vet.length; i++) {
+			soma += vet[i];
+		}
+		}
+	
+	
+	public float calcularMedia() {
+		return somaElementos() / temVetor
+	}
+	
+	public void exibirVetorInvertido() {
+		System.out.println("\nVetor invertido");
+		for(int i = vetor.length-1; i > -1; i--) {
+			System.out.println("vet[" + i + "]: " + vetor[i]);
+		}
+}
 }
