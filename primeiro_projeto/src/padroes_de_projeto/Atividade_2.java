@@ -1,4 +1,4 @@
-package execultaveis;
+package padroes_de_projeto;
 
 public class Atividade_2 {
 	public static void main(String[] args) {
