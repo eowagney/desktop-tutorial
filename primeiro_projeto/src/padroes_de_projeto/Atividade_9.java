@@ -1,4 +1,4 @@
-package execultaveis;
+package padroes_de_projeto;
 
 import java.util.Scanner;
 
