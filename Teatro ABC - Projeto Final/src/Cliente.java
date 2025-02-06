@@ -1,6 +1,6 @@
 public class Cliente {
 
-    // nome, CPF, telefone, endereço e data de nascimento.
+    //  nome, CPF, telefone, endereço e data de nascimento.
     //atributosS
     private String nome;
     private String cpf;
