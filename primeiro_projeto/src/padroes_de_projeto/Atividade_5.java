@@ -3,9 +3,11 @@ package padroes_de_projeto;
 import java.util.Scanner;
 
 public class Atividade_5 {
+	private static Scanner scanner;
+
 	public static void main(String[] args) {
 		
-	Scanner scanner = new Scanner(System.in);
+	scanner = new Scanner(System.in);
 	
 	System.out.println("Informe a velcidade em (km/h): ");
 	int velocidade = scanner.nextInt();
