@@ -12,7 +12,7 @@ public class Vetor{
 	private Scanner scanner;
 	
 	//Construtor
-	Vetor(int tamVetor) {
+	public Vetor(int tamVetor) {
 		vet = new int[tamVetor];
 		this.tamVetor = tamVetor;
 		preencherVetor();
