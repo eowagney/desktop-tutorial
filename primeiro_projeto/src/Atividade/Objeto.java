@@ -8,33 +8,24 @@ public class Objeto{
 	int[] vet = new int[tamVetor];
 	
 	//construtor
-	Vetor(int tamVetor) {
+	void Vetor(int tamVetor) {
 		this.tamVetor = tamVetor;
 		preencherVetor();
 	}
 	
-	//gets e sets
-	
-	public int getTamVetor() {
-	
-	public void setTamVetor(int tamVetor) {
-	
-	public int[] getVet() {() {
-			
-	public void setVet(int[] vet) {
-	
-	
-	//metotos
 	public void preencherVetor() {
 		
-		Scanner scanner = new Scanner(System.in);
-		
-	for(int i = 0; i < vet.length; i++) {
-		System.out.println("Informe um número inteiro: ");
-		vet[i] = scanner.nextInt();
+		try (Scanner scanner = new Scanner(System.in)) {
+			for(int i = 0; i < vet.length; i++) {
+				System.out.println("Informe um número inteiro: ");
+				vet[i] = scanner.nextInt();
+			
+			}
+		}
 	}
-	}
-	
+}
+	/*
+	int i;
 	if(vetor[i] % 2 == 0) pares++;
 	soma += vet[i];
 	
@@ -95,3 +86,4 @@ public class Objeto{
 		}
 }
 }
+*/
