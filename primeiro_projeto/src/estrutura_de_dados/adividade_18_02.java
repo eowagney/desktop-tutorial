@@ -4,14 +4,12 @@ import java.util.Scanner;
 
 public class adividade_18_02 {
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		
 		int vet[] = new int[4];
 		int cont = 0, result1 = 1, result2 = 1;
 		
 		for(int i = 0; i < vet.length; i++) {
 			System.out.println("Informe um número: ");
-			vet[i] = scanner.nextInt();
+			vet[i] = new Scanner(System.in).nextInt();
 		}
 		
 		for(int i = 0; i < vet.length; i++) {
@@ -27,6 +25,7 @@ public class adividade_18_02 {
 			}
 		
 	}
+		String result = null;
 		System.out.println("resultado: " + result);
 		
 	}

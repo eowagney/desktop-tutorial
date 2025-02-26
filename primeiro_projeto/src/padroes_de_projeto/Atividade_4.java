@@ -2,9 +2,11 @@ package padroes_de_projeto;
 import java.util.Scanner;
 
 public class Atividade_4 {
+	private static Scanner scanner;
+
 	public static void main(String[] args) {
 		
-		Scanner scanner = new Scanner(System.in);
+		scanner = new Scanner(System.in);
 		
 		System.out.println("Informe o valor de X:");
 		int x = scanner.nextInt();

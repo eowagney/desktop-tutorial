@@ -3,9 +3,11 @@ package padroes_de_projeto;
 import java.util.Scanner;
 
 public class Atividade_9 {
+	private static Scanner scanner;
+
 	public static void main(String[] args) {
 		
-		Scanner scanner = new Scanner(System.in);
+		scanner = new Scanner(System.in);
 		
 		System.out.println("Informe o tamanho do primeiro lado de um triângulo: ");
 		int a = scanner.nextInt();
