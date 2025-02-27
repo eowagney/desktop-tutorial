@@ -1,1 +1,0 @@
-NOME   -   CPF   -  TELEFONE   -   ENDEREÇO   -   DATA DE NASCIMENTO 
