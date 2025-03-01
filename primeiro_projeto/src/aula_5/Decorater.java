@@ -43,7 +43,17 @@ public class Decorater {
 	
 	class DataSourceDecorater implements DataSource{
 		private DataSource wrappee;
+		
+		
 
+		public DataSourceDecorater(DataSource wrappee) {
+			super();
+			this.wrappee = wrappee;
+		}
+
+		public void DataSourceDecorator(DataSource s) {
+			
+		}
 		@Override
 		public void writeData(String data) {
 			// TODO Auto-generated method stub
@@ -55,6 +65,25 @@ public class Decorater {
 			// TODO Auto-generated method stub
 			
 		}
+	}
+	
+	 class EncrypitionDecorator extends DataSourceDecorater{
+
+		public EncrypitionDecorator(DataSource wrappee) {
+			super(wrappee);
+			// TODO Auto-generated constructor stub
+		}
+		
+		
+	}
+	
+	 class CompressionDecorar extends DataSourceDecorater{
+
+		public CompressionDecorar(DataSource wrappee) {
+			super(wrappee);
+			// TODO Auto-generated constructor stub
+		}
+		
 	}
 	
 	
