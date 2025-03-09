@@ -31,6 +31,11 @@ public class ProcessadorDePedidos {
 		public void aplicarDesconto(DescontoStrategy desconto) {
 			desconto.calcularDesconto(this.getValor());
 		}
+
+		@Override
+		public String toString() {
+			return "Pedido [nome=" + nome + ", valor=" + valor + ", endereco=" + endereco + "]";
+		}
 	}
 	
 	interface DescontoStrategy{
@@ -98,11 +103,10 @@ public class ProcessadorDePedidos {
 			return documento;
 		}
 		
-		 void salvarPedido() throws IOException{
+		 void salvarPedido(String toString) throws IOException{
 			 try ( FileWriter fw = new FileWriter(this.getDocumento())){
 		           BufferedWriter bw = new BufferedWriter(fw);
-		           bw.write(documento);
-		           bw.newLine();
+		           bw.write(toString);
 			}
 		 }
 	}
@@ -117,7 +121,7 @@ public class ProcessadorDePedidos {
 		Pagamento pagar = new PixPagamento();
 		pagar.efetuarPagamento();
 		PedidoRepository salvar = new PedidoRepository("documento.txt");
-		salvar.salvarPedido();
+		salvar.salvarPedido(pedido.toString());
 	}
 	
 }
