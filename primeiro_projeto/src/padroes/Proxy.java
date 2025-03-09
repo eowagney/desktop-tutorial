@@ -1,10 +1,8 @@
-package aula_5;
+package padroes;
 
 public class Proxy {
 
 	public class Facade {
-	    
-	    // Subclasses internas
 	    class VideoConverter {
 	        void converterVideo(String filename, String format) {
 	            System.out.println("Convertendo vídeo: " + filename + " para o formato " + format);
@@ -54,16 +52,13 @@ public class Proxy {
 	        }
 	    }
 	    
-	    // Método Facade para simplificar a interação com o usuário
 	    public void processarVideo(String filename, String format) {
-	        // Instanciando as classes internas
 	        VideoFile videoFile = new VideoFile(filename);
 	        BitrateReader bitrateReader = new BitrateReader();
 	        AudioMixer audioMixer = new AudioMixer();
 	        CodecFactory codecFactory = new CodecFactory();
 	        VideoConverter videoConverter = new VideoConverter();
 	        
-	        // Lógica para processar o vídeo
 	        bitrateReader.read(filename);
 	        
 	        String codec = codecFactory.getCodec(format);
@@ -83,13 +78,8 @@ public class Proxy {
 	    }
 	    
 	    public static void main(String[] args) {
-	        // Criando a fachada para facilitar o uso
 	        Facade facade = new Facade();
-	        
-	        // Exemplo de uso com entrada do usuário
 	        facade.processarVideo("video_exemplo.mp4", "mp4");
 	    }
 	}
-
-	
 }

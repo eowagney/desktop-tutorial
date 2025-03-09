@@ -1,4 +1,4 @@
-package aula_5;
+package padroes;
 
 public class Decorater {
 
